@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- links and stuff -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" type="text/css" href="styles.css">  <!-- personal stylesheet -->
+<link rel="preconnect" href="https://fonts.googleapis.com"> <!-- font -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- font -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  <!-- font -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  <!-- online stylesheet -->
+
+</head>
+<body>
+
+<!-- navbar -->
+<ul class="navigation_bar" id="sidenav">
+  <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+  <li><a href="#home" onclick="closeNav()">HOME</a></li>
+  <li><a href="#gallery" onclick="closeNav()">GALLERY</a></li>
+  <li class="dropdown">
+  <a href="javascript:void(0)" class="dropbtn">ABOUT CBSE</a>
+    <div class="dropdown-content" id="drpdown-content-margin">
+      <a target="__blank" href="https://www.cbse.gov.in/cbsenew/organogram.html" onclick="closeNav()">Organogram</a>
+      <a target="__blank" href="https://www.cbse.gov.in/cbsenew/history.html" onclick="closeNav()">Our History</a>
+      <a target="__blank" href="https://www.cbse.gov.in/cbsenew/documents/CBSE@90-15-11-2019.pdf" onclick="closeNav()">CBSE@90</a>
+      <a target="__blank" href="https://www.cbse.gov.in/cbsenew/contact-us.html" onclick="closeNav()">Departments & Their Heads</a>
+      <a target="__blank" href="https://www.cbse.gov.in/cbsenew/contact-us.html#reg" onclick="closeNav()">Regioal Offices & Officers</a>
+      <a target="__blank" href="https://www.cbse.gov.in/cbsenew/coe_heads.html" onclick="closeNav()">COE's & their heads</a>
+      <a target="__blank" href="https://www.cbse.gov.in/cbsenew/gis_cbse.html" onclick="closeNav()">GIS Location of CBSE</a>
+      <a target="__blank" href="https://www.cbse.gov.in/cbsenew/rti.html" onclick="closeNav()">RTI</a>
+      <a target="__blank" href="https://www.cbse.gov.in/cbsenew/Standards_followed.html" onclick="closeNav()">Standards Followed</a>
+    </div>
+  </li>
+  <li class="dropdown">
+  <a href="javascript:void(0)" class="dropbtn">BOARD AND ITS COMMITTEES</a>
+    <div class="dropdown-content" id="drpdown-content-margin1">
+      <a target="__blank" href="https://www.cbse.gov.in/cbsenew/gb_members.html" onclick="closeNav()">GB Members & Tenure</a>
+      <a target="__blank"  href="https://www.cbse.gov.in/cbsenew/committees.html" onclick="closeNav()">Committees & Members</a>
+      <a target="__blank" href="https://www.cbse.gov.in/cbsenew/foundation.html" onclick="closeNav()">Provisions and Powers</a>
+      <a target="__blank" href="https://www.cbse.gov.in/cbsenew/res_moa.html" onclick="closeNav()">Resolution and MOA of CBSE</a>
+    </div>
+  </li>
+  <li class="dropdown">
+  <a href="javascript:void(0)" class="dropbtn">BYE-LAWS & RULES</a>
+    <div class="dropdown-content" id="drpdown-content-margin2">
+      <a target="__blank" href="https://www.cbse.gov.in/cbsenew/examinationbyelaws.html" onclick="closeNav()">Examination Bye-laws</a>
+      <a target="__blank" href="https://www.cbse.gov.in/cbsenew/aff_bye_laws.html" onclick="closeNav()">Affilation Bye-laws</a>
+      <a target="__blank" href="https://www.cbse.gov.in/cbsenew/documents//Weeding%20Out%20Rules%201998.pdf" onclick="closeNav()">Weeding Out Rules</a>
+      <a target="__blank" href="https://www.cbse.gov.in/cbsenew/cbse_service_rules.html" onclick="closeNav()">CBSE Service Rules</a>
+      <a target="__blank" href="https://www.cbse.gov.in/cbsenew/documents//Manual%20of%20Finance%20and%20Accounts-22012020.pdf" onclick="closeNav()">Finance Manual</a>
+      <a href="https://www.cbse.gov.in/cbsenew/documents//medical%20policy%202018.pdf" onclick="closeNav()">CBSE Medical Policy</a>
+    </div>
+  </li>
+  <li class="dropdown">
+  <a href="javascript:void(0)" class="dropbtn">CBSE SCHOOLS</a>
+    <div class="dropdown-content" id="drpdown-content-margin3">
+      <a target="__blank" href="https://saras.cbse.gov.in/SARAS/Home/CatRedirection" onclick="closeNav()">Affilation types</a>
+      <a target="__blank" href="https://www.cbse.gov.in/cbsenew/aff-bye-laws.html" onclick="closeNav()">Affilation Bye-laws</a>
+      <a target="__blank" href="https://saras.cbse.gov.in/SARAS/Home/CatRedirection" onclick="closeNav()">Apply for Affilation</a>
+      <a target="__blank" href="https://www.cbse.gov.in/cbsenew/Affiliation.html" onclick="closeNav()">Become a CBSE school</a>
+      <a target="__blank" href="https://www.cbse.gov.in/cbsenew/aboutaff.html" onclick="closeNav()">Hassle free Affilation</a>
+      <a target="__blank" href="https://www.cbse.gov.in/cbsenew/infra.html" onclick="closeNav()">Infrastructure</a>
+      <a target="__blank" href="https://www.cbse.gov.in/cbsenew/innovative_schools.html" onclick="closeNav()">Innovative Schools</a>
+      <a target="__blank" href="https://www.cbse.gov.in/cbsenew/itnas.html" onclick="closeNav()">NAS Survey 2017 of NCERT</a>
+      <a target="__blank" href="https://ncert.nic.in/syllabus.php" onclick="closeNav()">NCERT based curriculum</a>
+      <a target="__blank" href="https://www.cbse.gov.in/cbsenew/pedagogy.html" onclick="closeNav()">Pedagogy</a>
+      <a target="__blank" href="https://www.cbse.gov.in/cbsenew/staff.html" onclick="closeNav()">Qualified Teachers</a>
+      <a target="__blank" href="https://www.cbse.gov.in/cbsenew/safety.html" onclick="closeNav()">Safety</a>
+      <a target="__blank" href="https://saras.cbse.gov.in/SARAS/Home/Category_Wise" onclick="closeNav()">CBSE School Directory</a>
+      <a target="__blank" href="https://cbseit.in/cbse/cbse_maps/udiselocatecbse" onclick="closeNav()">GIS Mapping of school</a>
+    </div>
+  </li>
+  <li class="dropdown">
+  <a href="javascript:void(0)" class="dropbtn">MEDIA & PR</a>
+    <div class="dropdown-content" id="drpdown-content-margin4">
+      <a target="__blank" href="https://cbsecareerguidance.com/" onclick="closeNav()">Career Guidance and Counselling Portal</a>
+      <a target="__blank" href="https://www.cbse.gov.in/cbsenew/prunit/Main.html" onclick="closeNav()">Media & PR Unit</a>
+      <a target="__blank" href="https://www.cbse.gov.in/cbsenew/documents/CBSE@90-15-11-2019.pdf" onclick="closeNav()">CBSE@90</a>
+      <a target="__blank" href="https://www.cbse.gov.in/cbsenew/prunit_temp/index.html" onclick="closeNav()">Councelling</a>
+      <a target="__blank" href="https://www.cbse.gov.in/cbsenew/documents//Compendium%20of%20Courses1.pdf" onclick="closeNav()">Compendium of Courses</a>
+      <a target="__blank" href="https://www.cbse.gov.in/cbsenew/annual-report.html" onclick="closeNav()">Annual Reports</a>
+      <a target="__blank" href="https://www.youtube.com/watch?v=k9gPM7AJ4V8" onclick="closeNav()">Exam Anthem</a>
+      <a target="__blank" href="https://www.cbse.gov.in/cbsenew/podcast.html" onclick="closeNav()">Podcast</a>
+    </div>
+  </li>
+  <li class="dropdown">
+  <a href="javascript:void(0)" class="dropbtn">QUICK NAVIGATION</a>
+    <div class="dropdown-content" id="drpdown-content-margin5">
+      <a href="http://www.cbseacademic.nic.in/" onclick="closeNav()">Academics</a>
+      <a href="https://ctet.nic.in/WEBINFO/Page/Page?PageId=1&LangId=P" onclick="closeNav()">CTET</a>
+      <a href="http://cbseaff.nic.in/" onclick="closeNav()">Affilation</a>
+      <a href="http://cbsegames.in/" onclick="closeNav()">Physical Education and Sports</a>
+      <a href="http://cbseresults.nic.in/CBSEResults/Page/Page?PageId=19&LangId=P" onclick="closeNav()">Results</a>
+    </div>
+  </li>
+  <li><a href="#contact_us" onclick="closeNav()">CONTACT US</a></li>
+  <li><a target="__blank href="https://www.cbse.gov.in/cbsenew/sitemap.html" onclick="closeNav()">SITEMAP</a></li>
+</ul>
+
+
+
+
+
+<!--content -->
+
+<div id="leftpadding123" style="padding: 1px 60px 16px 0px;">
+	<span style="padding-top: 10px;font-size:30px;cursor:pointer; position: fixed;  background: #dedede; margin: 0; width: 100%;z-index: 100;" onclick="openNav()">&#9776; CENTRAL BOARD OF SECONDARY EDUCATION<img src="images/logo.png" style="height: 80px;"></span>
+<br>
+
+
+
+
+<!-- slideshow -->
+<br><br><br>
+<center>
+<div class="w3-content" style="max-width:1200px" id="home">
+  <img class="mySlides" src="images/something1.png" style="width:105%;display:none;">
+  <img class="mySlides" src="images/something2.png" style="width:105%">
+  <img class="mySlides" src="images/something3.png" style="width:105%;display:none">
+  <img class="mySlides" src="images/something4.png" style="width:105%;display:none">
+  <img class="mySlides" src="images/something5.png" style="width:105%;display:none">
+
+<center>
+  <div class="w3-row-padding w3-section" style="margin-left: 25%">    
+    <div class="w3-col s2">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="images/something1.png" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+    </div>
+    <div class="w3-col s2">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="images/something2.png" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+    </div>
+    <div class="w3-col s2">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="images/something3.png" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+    </div>
+    <div class="w3-col s2">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="images/something4.png" style="width:100%;cursor:pointer" onclick="currentDiv(4)">
+    </div>
+    <div class="w3-col s2">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="images/something5.png" style="width:100%;cursor:pointer" onclick="currentDiv(5)">
+    </div>
+  </div>
+  </center>
+</div>
+</center>
+
+
+
+
+<!-- gallery -->
+<br id="gallery"><br>
+<center><h1>GALLERY</h1></center>
+<br>
+<center>
+<div class="flexbox"  style="vertical-align: middle;">
+<div class="container">
+  <img src="images/1.jpeg" alt="Avatar" class="image" style="height:100%; ">
+  <div class="overlay">
+    <div class="text">CBSE OFFICE U.P.</div>
+  </div>
+</div>
+<div class="container">
+  <img src="images/2.jpeg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">CBSE OFFICE KOLKATA</div>
+  </div>
+</div>
+<div class="container">
+  <img src="images/3.jpg" alt="Avatar" class="image" style="height:100%; ">
+  <div class="overlay">
+    <div class="text">CBSE OFFICE MAHARASHTRA</div>
+  </div>
+</div>
+<div class="container">
+  <img src="images/4.png" alt="Avatar" class="image" style="height:100%;">
+  <div class="overlay">
+    <div class="text">CBSE OFFICE FUTURE</div>
+  </div>
+</div>
+<div class="container">
+  <img src="images/logo.png" alt="Avatar" class="image" style="height: 100%;">
+  <div class="overlay">
+    <div class="text">OUR NEW LOGO</div>
+  </div>
+</div>
+<div class="container">
+  <img src="images/6.jfif" alt="Avatar" class="image" style="height: 100%;">
+  <div class="overlay">
+    <div class="text">CBSE OFFICE RAJASTHAN</div>
+  </div>
+</div>
+<div class="container">
+  <img src="images/7.jpg" alt="Avatar" class="image" style="height: 100%;">
+  <div class="overlay">
+    <div class="text">CBSE OFFICE ASSAM</div>
+  </div>
+</div>
+<div class="container">
+  <img src="images/8.jfif" alt="Avatar" class="image" style="height: 100%;">
+  <div class="overlay">
+    <div class="text">OUR TEAM</div>
+  </div>
+</div>
+<div class="container">
+  <img src="images/9.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">CBSE HQ NEW DELHI</div>
+  </div>
+</div>
+</div>
+</div>
+</center>
+
+
+
+
+<!-- social media -->
+
+<div class="social_media_container">
+<button class="social_media_main"><img src="images/share.svg" style="border-radius: 50%;"></button>
+<button class="social_media" style="top: 70%; left: 94%">
+  <a href="https://www.instagram.com/cbse_hq_1929/?hl=en" target="__blank">
+  <img src="images/instagram.svg" style="border-radius: 50%;">
+  </a>
+</button>
+<button class="social_media" style="top: 72%; left: 89.2%">
+  <a href="https://m.facebook.com/cbseindia29/" target="__blank">
+    <img src="images/facebook.svg" style="border-radius: 50%;">
+  </a>
+</button>
+<button class="social_media" style="top: 81%; left: 87%">
+  <a href="https://twitter.com/cbseindia29" target="__blank">
+    <img src="images/twitter.svg" style="border-radius: 50%;">
+  </a>
+</button>
+<button class="social_media" style="top: 90%; left: 89%">
+<a href="https://www.youtube.com/channel/UCAre7caIM9EvmD-mcSy6VyA?view_as=subscriber" target="__blank">
+  <img src="images/youtube.svg" style="border-radius: 50%; height: 48px; width: 48px;">
+</a>
+</button>
+</div>
+
+
+
+<!-- contact us -->
+
+<br id="contact_us"><br><br><br>
+<center><h1>CONTACT US</h1></center>
+<br>
+<center>
+<div class="container" id="contact_us">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your firstname..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">INDIA</option>
+      <option value="canada">USA</option>
+      <option value="usa">DUBAI</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Your Subject" style="height:200px"></textarea>
+
+    <input type="button" value="Submit">
+  </form>
+</div>
+</center>
+
+<br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- javascript -->
+<script>
+// menu bar
+  	function openNav() {
+  	if (x.matches) {
+  	document.getElementById("sidenav").style.width = "100%";
+  	document.getElementById("sidenav").style.height = "100%";
+    document.getElementById("drpdown-content-margin").style.margin = "0px 0px 0px 35%";       
+    document.getElementById("drpdown-content-margin1").style.margin = "0px 0px 0px 35%";       
+    document.getElementById("drpdown-content-margin2").style.margin = "0px 0px 0px 35%";       
+    document.getElementById("drpdown-content-margin3").style.margin = "0px 0px 0px 35%";       
+    document.getElementById("drpdown-content-margin4").style.margin = "0px 0px 0px 35%";       
+    document.getElementById("drpdown-content-margin5").style.margin = "0px 0px 0px 35%";  
+    }
+	else {
+		document.getElementById("sidenav").style.width = "17.5%";
+  		document.getElementById("sidenav").style.height = "100%";  
+  		document.getElementById("leftpadding123").style.padding = "1px 60px 16px 17.5%";
+    document.getElementById("drpdown-content-margin").style.margin = "0px 0px 0px 20%";       
+    document.getElementById("drpdown-content-margin1").style.margin = "0px 0px 0px 20%";       
+    document.getElementById("drpdown-content-margin2").style.margin = "0px 0px 0px 20%";       
+    document.getElementById("drpdown-content-margin3").style.margin = "0px 0px 0px 20%";       
+    document.getElementById("drpdown-content-margin4").style.margin = "0px 0px 0px 20%";      
+		 }
+						}
+
+	function closeNav() {
+  	if (x.matches) {
+  	document.getElementById("sidenav").style.width = "100%";
+  	document.getElementById("sidenav").style.height = "0";  	
+     				}
+	else {
+		document.getElementById("sidenav").style.width = "0";
+  		document.getElementById("sidenav").style.height = "100%";  
+  		document.getElementById("leftpadding123").style.padding = "1px 60px 16px 0px";  	
+		 }
+						}
+
+
+var x = window.matchMedia("(max-width: 700px)")
+
+// slideshow
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+
+</script>
+
+</body>
+</html>
